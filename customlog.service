@@ -1,0 +1,11 @@
+[Unit]
+Description=customLogService
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/home/yauhen/daemon.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
